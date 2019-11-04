@@ -5,6 +5,11 @@ sp:
 spring:
   application:
     name: user-service
+  rabbitmq:
+    host: 192.168.72.130
+    port: 5672
+    username: admin
+    password: admin
     
 #server:
 #  port: 8101
@@ -23,11 +28,7 @@ management:
       exposure:
         include: refresh
         
-rabbitmq:
-  host: 192.168.72.130
-  port: 5672
-  username: admin
-  password: admin
+
 ---
 spring:
   profiles: user1
