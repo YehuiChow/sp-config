@@ -13,6 +13,12 @@ eureka:
   instance:
     lease-expiration-duration-in-seconds: 30
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
 ---
 spring:
   profiles: item1
